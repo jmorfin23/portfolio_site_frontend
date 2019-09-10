@@ -1,0 +1,9 @@
+.Header > .navbar {
+  color: white;
+}
+.navbar-brand {
+  color: white;
+}
+.bg-dark {
+  background-color: rgba(66, 66, 66, 1)!important;
+}

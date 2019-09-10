@@ -1,0 +1,30 @@
+.projects {
+  background-color: rgb(51, 51, 51);
+}
+
+.projects > .row > .col-md-8 h5 {
+  color: white;
+
+}
+
+.projects > .row > .col-md-8 div {
+  background-color: grey;
+  padding: 25px;
+  margin-top: 15px;
+}
+
+#add-margin {
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 130%;
+  margin-bottom: 25px;
+  color: rgb(0, 183, 255);
+}
+
+.projects > .row > .col-md-8 a {
+  color: white;
+}
+
+.projects > .row > .col-md-8 a:hover {
+  color: rgb(0, 183, 255);
+}

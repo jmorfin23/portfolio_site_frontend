@@ -1,0 +1,104 @@
+
+/* The main content container */
+.main-column-one {
+
+    background-color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    text-align: start;
+    overflow: auto;
+    color: grey;
+    text-align: justify;
+}
+.main-column-two {
+
+    background-color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    text-align: start;
+    overflow: auto;
+    color: grey;
+}
+
+#link {
+    float: right;
+}
+
+.img-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    background-color: rgba(60,60,60,1);
+}
+
+.add-padding {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.side {
+  color: rgb(200, 200, 200);
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+.make-white {
+  color: white;
+}
+.bottom-left {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgb(0, 183, 255);
+    padding: 35px;
+    display: block;
+    font-size: 40px;
+    font-style:unset;
+    margin: 0px;
+}
+.follow-me li a {
+    display: inline-block;
+    background-color: rgb(73, 73, 73);
+    color:rgb(175, 174, 174);
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.follow-me li {
+    list-style-type: none;
+    float: left;
+}
+.follow-me li a:hover {
+    background-color: rgb(0, 183, 255);
+    color: white;
+}
+/*
+#main-img {
+  width: 0%;
+  height: 550px;
+} */
+
+@media only screen and (max-width: 600px) {
+  #main-img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #main-img {
+    width: 70%;
+    height: 100%;
+  }
+}
+
+.homepage {
+  background-color: rgb(51, 51, 51);
+}

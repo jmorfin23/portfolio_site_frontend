@@ -1,0 +1,75 @@
+/* footer styles */
+.below-footer1 {
+
+    background-color: rgb(66, 66, 66);
+    color: white;
+
+    height: 200px;
+}
+
+.below-footer1 ul {
+    list-style-type: none;
+    display:inline-flex;
+    padding-top: 70px;
+}
+
+.below-footer1 li a {
+    padding: 15px;
+    font-size: 25px;
+    width: 50px;
+    /* text-align: center; */
+    text-decoration: none;
+    margin: 2px;
+    transition: 0.3s;
+
+}
+
+.below-footer1 li a:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background-color: #3B5998;
+    color: white;
+}
+.fa-linkedin {
+    background-color: #007bb5;
+    color: white;
+}
+.fa-google {
+    background-color: #dd4b39;
+    color: white;
+}
+.fa-github {
+    background-color: #125688;
+    color: white;
+}
+.fa-angle-up {
+    background-color: rgb(73, 73, 73);
+    color: white;
+}
+
+.below-footer1 i a {
+    padding-top: 9px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 2px;
+    position: absolute;
+    top: 50%;
+    left: 105%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+}
+
+.below-footer1 i a:hover {
+
+    background-color: rgb(0, 183, 255);
+}
+.add-background {
+  background-color: rgba(66, 66, 66, 1);
+}

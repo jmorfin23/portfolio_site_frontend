@@ -1,0 +1,32 @@
+/* Styling section below the nav bar */
+.below-nav {
+    height: 175px;
+    /* background-color: rgb(51, 51, 51); */
+    color: rgb(233, 233, 233);
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.below-nav p a:hover {
+    color: rgb(0, 183, 255);
+
+}
+.below-nav a {
+    color: white;
+    text-decoration: none;
+    border-left: 6px solid rgb(0, 183, 255);
+    transition: 0.3s;
+
+}
+.below-nav p {
+    padding-top: 45px;
+    font-size: 50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.below-nav p::after {
+    content: "   Learn more about me";
+    font-size: 15px;
+    color: rgb(104, 104, 104);
+}
+.belownav {
+  background-color: rgb(51, 51, 51);
+}
