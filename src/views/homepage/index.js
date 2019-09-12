@@ -62,7 +62,7 @@ class HomePage extends Component {
                     Boston Massachussetts. After graduating high school, Jonathan attended the University of Massachussetts Amherst
                     where he studied Biology. Upon graduating he was unsure of what he wanted to pursue. On a leap of faith, he left
                     Boston to live in Nashville TN on his own to get out of his comfort zone. In Nashville, Jonathan worked various jobs
-                    and while working as a leasing consultant, discovered that he wanted to pursue development. After meeting numerous sofware developers he decided to move back to home and attend coding bootcamp.
+                    and while working as a leasing consultant, discovered that he wanted to pursue development. After meeting numerous sofware developers he decided to move back to home and attend a coding bootcamp.
                 </p>
                   </div>
                 </div>
