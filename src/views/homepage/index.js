@@ -26,15 +26,14 @@ class HomePage extends Component {
             </p>
             <br/>
             <p>
-                My name is Jonathan Morfin, I'm 23 years old living in Boston MA. I am a developer that enjoys learning new ideas, learning new technologies, and meeting people.
+                My name is Jonathan Morfin. I'm 23 years old living in Boston MA. I'm a developer that enjoys learning new ideas, new technologies, and meeting new people.
             </p>
             <br/>
             <p>
                 You might be wondering why I chose to pursue developoment as a career rather than a career in the medical field
-                considering I graduated with a B.S. in Biology. One of the reasons I decided to not pursue the biological sciences was because I simply don't have a passion for
-                it. Like anything else, if you love it, do it, if you don't, you shouldn't force yourself. All things are the same for
-                careers. One of my strengths is problem solving and being highly detail oriented. These are must-need qualities for candidates pursuing any type
-                of CS related careers. After working a few jobs in other un-related fields, I decided to choose to pursue development.
+                considering I graduated with a B.S. in Biology. One of the reasons I decided not to pursue the biological sciences was because I simply don't have a passion for
+                it. Like anything else, if you love it, do it, if you don't, you shouldn't force yourself. One of my strengths is problem solving and being highly detail oriented. These are must-need qualities for candidates pursuing any type
+                of CS related careers. After working a few jobs in other unrelated fields, I decided to choose to pursue development.
             </p>
           </div>
         </div>
@@ -44,7 +43,7 @@ class HomePage extends Component {
                 <h2>What I currently know</h2>
                 <br/>
                 <p>
-                    Currently I have experience in Python, Javascript, HTML5, CSS3, SQL, relational databases, and frameworks Flask and React. I enjoy building full stack applications, you can check out some of these in the 'Projects' section.
+                    Currently, I have experience in Python, Javascript, HTML5, CSS3, SQL, relational databases, and frameworks Flask and React. I enjoy building full stack applications, you can check out some of these in the 'Projects' section.
                 </p>
          </div>
         </div>
