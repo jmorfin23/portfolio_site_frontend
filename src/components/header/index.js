@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './index.css';
 import {NavLink} from 'react-router-dom';
 
@@ -13,11 +13,14 @@ function Header() {
 
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
-            <li className="nav-item active">
+            <li className="nav-item">
               <NavLink className="nav-link" to="/">About Me <span className="sr-only">(current)</span></NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/projects">Projects</NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/contact">Contact</NavLink>
             </li>
 
           </ul>

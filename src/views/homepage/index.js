@@ -13,7 +13,7 @@ class HomePage extends Component {
       <div className="row">
         <div className="col-md-12 add-padding">
         <div className="img-container">
-                <img id="main-img" src={img} alt="Jonathan image" />
+                <img id="main-img" src={img} alt="Jonathan_picture" />
                 <div className="bottom-left">About me</div>
             </div>
           </div>
@@ -90,9 +90,9 @@ class HomePage extends Component {
                         <br/>
 
                             <ul>
-                                <li><a href="https://www.facebook.com/jonathan.morfin.5?ref=bookmarks" target="_blank">facebook</a></li>
-                                <li><a href="https://www.linkedin.com/in/jonathanmorfin411/" target="_blank">linkedin</a></li>
-                                <li><a href="https://github.com/jmorfin23" target="_blank">github</a></li>
+                                <li><a href="https://www.facebook.com/jonathan.morfin.5?ref=bookmarks" target="_blank" rel="noopener noreferrer">facebook</a></li>
+                                <li><a href="https://www.linkedin.com/in/jonathanmorfin411/" target="_blank" rel="noopener noreferrer">linkedin</a></li>
+                                <li><a href="https://github.com/jmorfin23" target="_blank" rel="noopener noreferrer">github</a></li>
                             </ul>
 
                 </div>
