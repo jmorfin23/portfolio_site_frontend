@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.css';
 
-function BelowNav(props) {
+const BelowNav = (props) => {
   return (
     <div className="belownav">
       <div className="row">

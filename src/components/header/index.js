@@ -2,7 +2,7 @@ import React from 'react';
 import './index.css';
 import {NavLink} from 'react-router-dom';
 
-function Header() {
+const Header = () => {
   return (
     <div className="Header">
     <nav className="color navbar navbar-expand-lg navbar-dark bg-dark">
