@@ -21,7 +21,6 @@ class App extends Component {
 
   sendMail = async(e) => {
     e.preventDefault();
-    console.log('inside send mail');
 
     let name = e.target.elements.name.value;
     let email = e.target.elements.email.value;
@@ -31,7 +30,7 @@ class App extends Component {
     console.log(name, email, subject, message);
 
     //api call to send to backend;
-    let URL = 'http://127.0.0.1:5000/api/email';
+    let URL = 'https://jonathan-morfin-9.herokuapp.com/api/email';
 
     let response = await fetch(URL, {
       headers: {
@@ -42,17 +41,13 @@ class App extends Component {
         'message': message
       }
     });
-    console.log('test')
     console.log(response);
 
     let data = await response.json();
-    console.log('test2')
     console.log(data);
-
   }
   scrollToTop = async(e) => {
     e.preventDefault();
-    console.log('inside scrolltotop ')
     document.documentElement.scrollTop = 0;
 
   }
