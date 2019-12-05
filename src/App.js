@@ -30,7 +30,7 @@ class App extends Component {
     console.log(name, email, subject, message);
 
     //api call to send to backend;
-    let URL = 'https://jonathan-morfin-9.herokuapp.com/api/email';
+    let URL = 'https://portfolio-backend2019.herokuapp.com/api/email';
 
     let response = await fetch(URL, {
       headers: {
