@@ -19,6 +19,36 @@ class App extends Component {
     }
   }
 
+<<<<<<< HEAD
+=======
+  sendMail = async(e) => {
+    e.preventDefault();
+
+    let name = e.target.elements.name.value;
+    let email = e.target.elements.email.value;
+    let subject = e.target.elements.subject.value;
+    let message = e.target.elements.message.value;
+
+    console.log(name, email, subject, message);
+
+    //api call to send to backend;
+    let URL = 'https://jonathan-morfin-9.herokuapp.com/api/email';
+
+    let response = await fetch(URL, {
+      headers: {
+        'Content-Type': 'application/json',
+        'name': name,
+        'email': email,
+        'subject': subject,
+        'message': message
+      }
+    });
+    console.log(response);
+
+    let data = await response.json();
+    console.log(data);
+  }
+>>>>>>> parent of 7f82419... heroku ready
   scrollToTop = async(e) => {
     e.preventDefault();
     document.documentElement.scrollTop = 0;
