@@ -19,7 +19,6 @@ class App extends Component {
     }
   }
 
-
   sendMail = async(e) => {
     e.preventDefault();
     console.log('inside send mail');
