@@ -6,7 +6,7 @@ import HomePage from './views/homepage';
 import Projects from './views/projects';
 import Footer from './components/footer';
 import Contact from './views/contact';
-import { Button } from 'reactstrap'; 
+import { Button } from 'reactstrap';
 
 class App extends Component {
 
@@ -19,8 +19,6 @@ class App extends Component {
     }
   }
 
-<<<<<<< HEAD
-=======
   sendMail = async(e) => {
     e.preventDefault();
     console.log('inside send mail');
@@ -52,7 +50,7 @@ class App extends Component {
     console.log(data);
 
   }
->>>>>>> parent of 7f82419... heroku ready
+
   scrollToTop = async(e) => {
     e.preventDefault();
     console.log('inside scrolltotop ')
