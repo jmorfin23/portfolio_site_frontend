@@ -10,7 +10,7 @@ const ErrorAlert = () => {
 
   return (
     <Alert color="warning" isOpen={visible} toggle={onDismiss}>
-      There was an error in sending your message. Please try again
+      There was an error in sending your message. This could be a formatting issue. Please refresh and try again.
     </Alert>
   )
 }
