@@ -35,36 +35,36 @@ class Contact extends Component {
     this.setState({ subject: event.target.value});
   }
   setMessage = (event) => {
-    console.log(typeof event.target.value); 
     this.setState({ message: event.target.value});
   }
 
   sendMail = async(e) => {
     e.preventDefault();
 
-    this.setState({ form_submitted: true });
-
+    let myData = {}; 
+    console.log('test1');
     if (this.state.name.length <= 0 || this.state.email.length <= 0 || this.state.subject.length <= 0 || this.state.message.length <= 0 ) {
       this.setState({ filled: true})
       return;
     }
-    
+    console.log('test2');
+    myData = { 'name': this.state.name, 'email': this.state.email, 'subject': this.state.subject, 'message': this.state.message  }
+    this.setState({ form_submitted: true });
+    console.log('test3');
     try {
       let response = await fetch('https://portfolio-backend2019.herokuapp.com/api/email', {
         headers: {
           'Content-Type': 'application/json',
-          'name': this.state.name,
-          'email': this.state.email,
-          'subject': this.state.subject,
-          'message': this.state.message
+          'data': JSON.stringify(myData)
         }
       });
-
+      console.log('test4');
       let data = await response.json();
-
+      console.log(data);
+      console.log('test5');
       //display success or error message
       data.Success ? this.setState({ success: true }) : this.setState({ error: true })
-
+      
       //clear input fields
       this.setState({ name: '', email: '', subject: '', message: '', filled: false, form_submitted: false, sent: true });
 
@@ -130,22 +130,54 @@ class Contact extends Component {
       <div className="form-row">
         <div className="form-group col-md-6">
           <label>Name</label>
-          <input id="name_in" onChange={this.setName} type="name" className="form-control" placeholder="Name" name="name" value={this.state.name}/>
+          <input 
+            id="name_in" 
+            onChange={this.setName} 
+            type="text" 
+            className="form-control" 
+            placeholder="Name" 
+            name="name" 
+            value={this.state.name}
+          />
         </div>
         <div className="form-group col-md-6">
           <label>Email</label>
-          <input id="email_in" onChange={this.setEmail} type="email" className="form-control" placeholder="Email" name="email" value={this.state.email}/>
+          <input 
+            id="email_in" 
+            onChange={this.setEmail} 
+            type="text" 
+            className="form-control" 
+            placeholder="Email" 
+            name="email" 
+            value={this.state.email}
+          />
         </div>
       </div>
 
       <div className="form-group">
         <label>Subject</label>
-        <input id="sub_in" onChange={this.setSubject} type="text" className="form-control" placeholder="Subject" name="subject" value={this.state.subject}/>
+        <input 
+          id="sub_in" 
+          onChange={this.setSubject} 
+          type="text" 
+          className="form-control" 
+          placeholder="Subject" 
+          name="subject" 
+          value={this.state.subject}
+        />
       </div>
 
       <div className="form-group">
         <label>Message</label>
-        <textarea id="message_in" onChange={this.setMessage} className="form-control" name="message" rows="5" placeholder="Message..." value={this.state.message}></textarea>
+        <textarea 
+          id="message_in" 
+          type="text"
+          onChange={this.setMessage} 
+          className="form-control" 
+          name="message" rows="5" 
+          placeholder="Message..." 
+          value={this.state.message}>
+        </textarea>
       </div>
 
       <button type="submit" className="btn btn-primary">Send</button>
